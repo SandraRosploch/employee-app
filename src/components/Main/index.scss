@@ -1,0 +1,57 @@
+@import "../../App.scss";
+
+.main-container {
+  display: flex;
+  gap: 20px;
+  padding: 40px 30px;
+
+  flex-direction: column-reverse;
+
+  align-items: center;
+  background-color: $background-color;
+  border-radius: 8px;
+  margin: 10px;
+
+  .main-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+
+    h2 {
+      font-size: 56px;
+      font-family: "Lato-Bold", sans-serif;
+      margin-bottom: 20px;
+      color:palevioletred;
+    }
+    p {
+      font-family: "Lato-Regular", sans-serif;
+      font-size: 20px;
+      text-align: justify;
+      margin-left: auto;
+      margin-right: auto;
+     
+    }
+  }
+  .main-img {
+    padding-left: 16px;
+    img {
+      border-radius: 10px;
+      width: 100%; 
+     
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-container {
+    flex-direction: row;
+
+    .main-description {
+      justify-content: center;
+
+    }
+  }
+}

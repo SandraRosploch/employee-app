@@ -1,0 +1,93 @@
+.user-list {
+    padding: 20px;
+    width: 100%;
+    background-color: #dee4ef;
+
+    &__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    &__items {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    &__item {
+        margin: 30px 0;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 100%;
+
+    }
+
+    &__card {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        gap: 20px;
+        align-items: center;
+        padding: 20px;
+
+        &--header {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            gap: 20px;
+            align-items: center;
+            padding: 20px;
+            margin: 30px 0;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 97.4%;
+        }
+
+    }
+
+    &__image {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 20px;
+    }
+
+    &__name {
+        font-size: 18px;
+        font-weight: 600;
+        margin: 0;
+        flex-grow: 1;
+    }
+
+    &__btn {
+        margin-left: 20px;
+        background-color: #007BFF;
+        color: white;
+    }
+
+    &__delete-btn {
+        margin-left: 10px;
+        background-color: #dc3545;
+        color: white;
+    }
+
+    &__description {
+        font-size: 14px;
+        color: #6c757d;
+        margin: 5px 0 0;
+        margin: 0 20px;
+    }
+}

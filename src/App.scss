@@ -1,0 +1,89 @@
+$primary-color: #007bff;
+$secondary-color: #69a1f5;
+$background-color: #f7f8fc;
+$header-color: #1e1e1e;
+$text-color: #5a5a5a;
+$cancel-btn-color: #ff3e3e;
+$app-bg-color: #dee4ef;
+$breakpoint: 768px;
+
+body {
+  background-color: $background-color;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+  padding: 0;
+  max-width: 100vw;
+  background-color: $app-bg-color;
+ 
+  .btn {
+    width: 80%;
+    transition: 0.5s;
+    &:hover {
+      background-color: $secondary-color;
+    }
+  }
+
+  .sidebar {
+    background-color: $background-color;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    border-radius: 8px;
+    margin-top: 10px;
+   
+    a {
+      gap: 10px;
+      text-decoration: none;
+      font-size: small;
+      padding: 16px;
+   
+    }
+
+    .nav {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 10px;
+     
+    }
+    .language-btn {
+      margin-top: 20px;
+      width: 50px;
+      background-color: $primary-color;
+    }
+  }
+}
+
+.user-list {
+  padding: 20px;
+  background-color: $app-bg-color;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .search-bar {
+      width: 300px;
+      padding: 10px;
+      border: 1px solid $secondary-color;
+      border-radius: 5px;
+    }
+  }
+}
+
+.content {
+  width: 80%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+//

@@ -1,0 +1,71 @@
+@import "../../App.scss";
+
+.button {
+  background-color: #C3C6BF;
+  padding: 0 16px;
+  font-size: 20px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  // border: 4px solid #879681;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+
+  &--primary {
+    background-color: #007BFF;
+
+    &:hover:not(.button--disabled),
+    &:focus:not(.button--disabled) {
+      background-color: $secondary-color;
+    }
+  }
+
+  &--secondary {
+    background-color: palevioletred;
+
+    &:hover:not(.button--disabled),
+    &:focus:not(.button--disabled) {
+      background-color: violet;
+    }
+  }
+
+  &--danger {
+    background-color: red;
+
+    &:hover:not(.button--disabled),
+    &:focus:not(.button--disabled) {
+      background-color: darkred;
+    }
+  }
+
+  &--content {
+    width: fit-content
+  }
+
+  &--fill {
+    width: 100%;
+  }
+
+  &--small {
+    height: 24px
+  }
+
+  &--medium {
+    height: 30px
+  }
+
+  &--large {
+    height: 42px;
+
+  }
+
+  &--disabled {
+    background-color: grey;
+    cursor: none,
+  }
+}

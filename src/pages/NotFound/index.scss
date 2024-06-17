@@ -1,0 +1,16 @@
+$margin-left: 20px;
+
+.not-found {
+  color: #434343;
+
+  h3 {
+    font-size: 50px;
+    margin-left: $margin-left;
+    margin-top: 20px;
+  }
+  p {
+    font-size: 30px;
+    margin-left: $margin-left;
+    
+  }
+}
